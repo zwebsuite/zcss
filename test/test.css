@@ -1,0 +1,528 @@
+body{
+    background-color:rgb(0, 0, 0);
+background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Litter.JPG/1920px-Litter.JPG");
+background-attachment:fixed;
+background-size:617px;
+}
+#header{
+    font-size:41px;
+    text-align:center;
+    font-family:impact;
+    letter-spacing:20px;
+    color:rgb(255, 191, 0);
+}
+#motto{
+    text-align:center;
+    font-size:30px;
+    color:rgb(255, 255, 255);
+    font-family:cursive;
+}
+#description{
+background-color:rgb(0, 0, 0);
+    font-family:verdana;
+    text-align:center;
+    color:rgb(255, 255, 255);
+    margin-top:-48px;
+    
+}
+#list{
+    font-family:verdana;
+    background-color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    margin-top:-10%;
+    
+}
+#stuff{
+    background:rgb(0, 0, 0);
+    padding:33px;
+    font-size:41px;
+    text-align:center;
+    font-family:impact;
+    letter-spacing:20px;
+    color:rgb(255, 255, 255);
+    margin-top: -54px;
+    
+}
+h1{
+    background-color:rgb(0, 0, 0);
+    margin-top:-54px;
+    color:rgb(255, 255, 255);
+    text-align:center;
+    font-family:impact;
+    letter-spacing:19px;
+    font-size:48px;
+}
+h2{
+    
+    margin-top:-54px;
+    color:rgb(255, 191, 0);
+    text-align:center;
+    font-family:impact;
+    letter-spacing:19px;
+    font-size:48px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background-color: white;
+    border-radius: 13px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(207, 207, 207, 0.7);
+    border-radius: 50px;
+    border: 1px solid white;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(207, 207, 207, 1);
+    border-radius: 50px;
+    border: 1px solid white;
+}
+
+::selection {
+    color: white;
+    background-color: rgb(143, 140, 143);
+}
+
+.tooltip .tooltiptext {
+visibility: hidden;
+
+background-color: rgb(107, 106, 107);
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 10px;
+font-family: google sans display;
+
+position: absolute;
+z-index: 1;
+top: 133%;
+left: 50%;
+margin-left: -43px;
+}
+
+.tooltip:hover .tooltiptext {
+visibility: visible;
+opacity: 1;
+}
+
+input[type=text]{
+    position: fixed;
+    top: 10px;
+    left: 158px;
+    width: 193px;
+    height: 26px;
+   outline: none;
+   box-shadow: 0px 0px 2px 2px rgb(217, 213, 217) inset;
+   border: 1px solid rgb(163, 163, 163);
+   font-family: google sans display;
+}
+input[type=text]:focus{
+     box-shadow: 0px 0px 2px 2px rgb(209, 209, 209) inset;
+     border:1px solid rgb(108, 99, 189);
+}
+#search {
+    position: fixed;
+    left: 356px;
+    top: 10px;
+    height: 30px;
+    width: 41px;
+    border: 1px solid rgb(163, 163, 163);
+    outline: none;
+    color: gray;
+}
+#search:hover {
+    cursor: pointer;
+    color: black;
+    background-color: rgb(207, 207, 207);
+}
+#micid {
+    position: fixed;
+    left: 398px;
+    top: 10px;
+    height: 30px;
+    width: 43px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: gray;
+}
+#micid:hover {
+    cursor: pointer;
+    color: black;
+    
+}
+
+#createb {
+    position: fixed;
+    left: 436px;
+    top: 10px;
+    height: 30px;
+    width: 43px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: gray;
+}
+#createb:hover {
+    cursor: pointer;
+    color: black;
+    
+}
+
+#notif {
+    position: fixed;
+    left: 474px;
+    top: 10px;
+    height: 30px;
+    width: 43px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: gray;
+}
+#notif:hover {
+    cursor: pointer;
+    color: black;
+    
+}
+
+#acc {
+    position: fixed;
+    left: 512px;
+    top: 10px;
+    height: 30px;
+    width: 43px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: green;
+}
+#acc:hover {
+    cursor: pointer;
+    
+}
+#yt .material-icons {
+    color: red;
+    font-size: 29px;
+    position: fixed;
+    top: 10px;
+    left: 35px;
+}
+#yt:hover {
+    cursor: pointer;
+}
+#yt #utube {
+    font-family: "Roboto Condensed", sans-serif;
+    position: fixed;
+    top: 14px;
+    left: 67px;
+    font-size: 18px;
+}
+#yt #in {
+    font-family: "Roboto Condensed", sans-serif;
+    position: fixed;
+    top: 14px;
+    left: 130px;
+    font-size: 10px;
+}
+#hr1 {
+    position: fixed;
+    width: 93%;
+    top: 40px;
+    left: 40px;
+    
+}
+#hr2 {
+    position: fixed;
+    width: 93%;
+    top: 106px;
+    left: 40px;
+    
+}
+#suggest-btns {
+    position: fixed;
+    top: 65px;
+    left: 40px;
+}
+#suggest-btns button {
+    border: 1px solid rgb(163, 163, 163);
+    outline: none;
+    padding: 7px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    height: 32px;
+    cursor: pointer;
+    margin-right: 4px;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+}
+#suggest-btns button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+#videos {
+    position: absolute;
+    top: 137px;
+    left: 40px;
+}
+.video {
+    width: 151px;
+    height: 83px;
+    background-color: rgb(184, 184, 184);
+    cursor: pointer;
+}
+#v1 {
+    width: 159px;
+    height: 107px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg/800px-Jupiter_and_its_shrunken_Great_Red_Spot.jpg);
+    background-size: 159px;
+}
+#v1:hover {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/790106-0203_Voyager_58M_to_31M_reduced.gif/292px-790106-0203_Voyager_58M_to_31M_reduced.gif);
+    background-size: 159px;
+    
+}
+#v2 {
+   width: 159px;
+    height: 107px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/BH_LMC.png/800px-BH_LMC.png);
+    background-size: 159px; 
+}
+#v2:hover {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/BlackHole_Lensing.gif/220px-BlackHole_Lensing.gif);
+    background-size: 159px;
+}
+#v3 {
+    width: 159px;
+    height: 107px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Infinitely_wide_neural_network.webm/1200px--Infinitely_wide_neural_network.webm.jpg);
+    background-size: 159px 107px; 
+    
+}
+#v3:hover {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/bb/Kar-go_Real-time_Neural_Network_Processing.gif);
+      background-size: 159px 107px;
+}
+#v4 {
+    width: 159px;
+    height: 107px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/17/World_map_of_total_confirmed_COVID-19_cases_per_million_people.png);
+    background-size: 159px 107px; 
+    border: 1px solid rgb(219, 219, 219);
+}
+#v4:hover {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b3/COVID-19-outbreak-timeline.gif);
+      background-size: 159px 107px;
+}
+#v5 {
+    width: 159px;
+    height: 107px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d1/GPB_circling_earth.jpg);
+    background-size: 159px 107px; 
+    
+}
+#v5:hover {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/78/Relativity_of_Simultaneity_Animation.gif);
+      background-size: 159px 107px;
+}
+#v6 {
+    width: 159px;
+    height: 107px;
+    background-color: rgb(195, 203, 207);
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Lorentz_boost_x_direction_standard_configuration.svg/390px-Lorentz_boost_x_direction_standard_configuration.svg.png);
+    background-size: 159px 107px; 
+    
+}
+#v6:hover {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/0b/Lorentz_Galilean_Comparison.gif);
+      background-size: 159px 107px;
+      border: 1px solid rgb(219, 219, 219);
+}
+.text {
+    font-family: Google sans display;
+}
+.img img {
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+}
+.title {
+    position: relative;
+    top: -2px;
+    left: 9px;
+    color: black;
+    font-weight: bold;
+}
+.channel {
+     position: relative;
+    top: 2px;
+    left: 32px;
+    color: gray;
+    font-size: 15px;
+}
+.stats {
+     position: relative;
+    top: 18px;
+    left: -55px;
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+}
+.time {
+    color: white;
+    font-family: roboto condensed;
+    background-color: black;
+    position: relative;
+    top: 85px;
+    left: 126px;
+    padding: 3px;
+}
+#video2 {
+    position: absolute;
+    left: 174px;
+    top: 1px;
+}
+#videoh {
+    position: absolute;
+    left: 174px;
+    top: 46px;
+}
+#video3 {
+     position: absolute;
+    left: 345px;
+    top: 1px;
+}
+#video4 {
+     position: absolute;
+    left: 0px;
+    top: 207px;
+}
+#video5 {
+     position: absolute;
+    left: 174px;
+    top: 207px;
+}
+#video6 {
+     position: absolute;
+    left: 345px;
+    top: 207px;
+}
+#menu {
+    font-family: roboto condensed;
+}
+.meu {
+    position: fixed;
+}
+.meu:hover {
+    background-color: rgb(0, 0, 0, 0.1);
+   border-radius: 20px;
+}
+.home {
+    position: fixed;
+    top: 80px;
+    left: 5px;
+    color: red;
+    cursor: pointer;
+}
+.ht {
+    position: fixed;
+    top: 108px;
+    left: 2px;
+    font-size: 13px;
+}
+.explore {
+    position: fixed;
+    top: 162px;
+    left: 5px;
+    color: rgb(97, 97, 97);
+    cursor: pointer;
+}
+
+
+.et {
+    position: fixed;
+    top: 190px;
+    left: 2px;
+    font-size: 12px;
+}
+.subs {
+    position: fixed;
+    top: 241px;
+    left: 5px;
+    color: rgb(97, 97, 97);
+    cursor: pointer;
+}
+
+
+.st {
+    position: fixed;
+    top: 269px;
+    left: 2px;
+    font-size: 12px;
+}
+.library {
+    position: fixed;
+    top: 331px;
+    cursor: pointer;
+    left: 5px;
+    color: rgb(97, 97, 97);
+}
+
+
+.lt {
+    position: fixed;
+    top: 358px;
+    left: 2px;
+    font-size: 12px;
+}
+.home:hover, .explore:hover, .subs:hover, .library:hover {
+   color: black;
+}
+#expContent {
+    position: absolute;
+    top:130px;
+    left: 50px;
+}
+#history {
+    position: absolute;
+    top:130px;
+    left: 50px;
+}
+#expContent button {
+    width: 140px;
+    height: 80px;
+    font-size: 20px;
+    background-color: rgb(245, 245, 245);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+#expContent button:hover {
+    background-color: rgb(214, 214, 214);
+}
+.txt {
+    font-family: roboto condensed;
+    position: relative;
+    top: 14px;
+    left: -40px;
+}
+#expContent button .material-icons {
+    position: relative;
+    top: -15px;
+    left: -20px;
+    color: red;
+}
+#his {
+    font-family: roboto condensed;
+    position: relative;
+    top: -7px;
+}
+.redLine {
+    width: 150px;
+    height: 3px;
+    background-color: red;
+    position: fixed;
+}
