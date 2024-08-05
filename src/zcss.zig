@@ -2,7 +2,7 @@
 // https://www.w3.org/TR/css-syntax-3/
 
 const std = @import("std");
-const vexlib = @import("./lib/vexlib.zig");
+const vexlib = @import("vexlib");
 const As = vexlib.As;
 const Math = vexlib.Math;
 const String = vexlib.String;
@@ -99,7 +99,7 @@ pub const Parser = struct {
             }
         }
         self.updatePosition(self.css.slice(0, idx));
-        self.css = self.css.slice(idx, 0);
+        self.css = self.css.slice(idx, -1);
     }
 
     fn comment(self: *Parser) ParseError!Comment {
@@ -111,7 +111,7 @@ pub const Parser = struct {
         const startPos = self.position();
         const commentValue = self.css.slice(2, As.u32(commentEnd));
         self.updatePosition(commentValue);
-        self.css = self.css.slice(As.u32(commentEnd) + 2, 0);
+        self.css = self.css.slice(As.u32(commentEnd) + 2, -1);
 
         const commentAST = Comment{
             .value = commentValue,
@@ -151,7 +151,7 @@ pub const Parser = struct {
         const startPos = self.position();
 
         self.updatePosition(self.css.slice(0, idx + 1));
-        self.css = self.css.slice(idx + 1, 0);
+        self.css = self.css.slice(idx + 1, -1);
 
         return Declaration{
             .property = property.trim(),
@@ -175,7 +175,7 @@ pub const Parser = struct {
                 selectorsArr.append(trimed);
 
                 self.updatePosition(sel);
-                self.css = self.css.slice(idx, 0);
+                self.css = self.css.slice(idx, -1);
                 break;
             } else if (ch0 == ',') {
                 // store selector
@@ -187,12 +187,12 @@ pub const Parser = struct {
                 self.updatePosition(sel);
                 self.column += 1; // update position on comma
                 // +1 to move past comma
-                self.css = self.css.slice(idx + 1, 0);
+                self.css = self.css.slice(idx + 1, -1);
                 idx = 0;
             } else if (ch0 == '/' and self.css.charAt(idx + 1) == '*') {
                 // move parser position to start of comment
                 self.updatePosition(self.css.slice(0, idx));
-                self.css = self.css.slice(idx, 0);
+                self.css = self.css.slice(idx, -1);
 
                 // parse comment
                 try self.skipComments();
@@ -232,7 +232,7 @@ pub const Parser = struct {
         try self.skipComments();
 
         // skip opening curly brace
-        self.css = self.css.slice(1, 0);
+        self.css = self.css.slice(1, -1);
 
         while (self.css.charAt(0) != '}') {
             self.skipWhitespace();
@@ -273,7 +273,7 @@ pub const Parser = struct {
         }
         
         // skip closing curly brace
-        self.css = self.css.slice(1, 0);
+        self.css = self.css.slice(1, -1);
         ruleAST.position.end = self.position();
 
         // // declarations

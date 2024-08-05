@@ -1,5 +1,8 @@
 node_modules
 package-lock.json
 
+.vscode
+
+zig-cache/
 .zig-cache
 zig-out

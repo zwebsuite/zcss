@@ -3,7 +3,7 @@ const std = @import("std");
 const zcss = @import("./src/zcss.zig");
 const CSSParser = zcss.Parser;
 
-const vexlib = @import("./src/lib/vexlib.zig");
+const vexlib = @import("vexlib");
 const println = vexlib.println;
 
 pub fn main() void {
@@ -13,7 +13,7 @@ pub fn main() void {
     const allocator = generalPurposeAllocator.allocator();
     vexlib.init(&allocator);
 
-    const cssFile = @embedFile("./test/test1.css");
+    const cssFile = @embedFile("./test/test.css");
 
     var myParser = CSSParser{};
     const ast = myParser.parse(cssFile) catch |err| blk: {
