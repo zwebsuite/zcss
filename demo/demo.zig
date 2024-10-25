@@ -1,10 +1,10 @@
 const std = @import("std");
 
-const zcss = @import("./src/zcss.zig");
-const CSSParser = zcss.Parser;
-
 const vexlib = @import("vexlib");
 const println = vexlib.println;
+
+const zcss = @import("zcss");
+const CSSParser = zcss.Parser;
 
 pub fn main() void {
     // setup allocator
@@ -13,7 +13,7 @@ pub fn main() void {
     const allocator = generalPurposeAllocator.allocator();
     vexlib.init(&allocator);
 
-    const cssFile = @embedFile("./test/test.css");
+    const cssFile = @embedFile("./test.css");
 
     var myParser = CSSParser{};
     const ast = myParser.parse(cssFile) catch |err| blk: {

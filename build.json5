@@ -1,0 +1,30 @@
+{
+    name: "zcss",
+    language: "zig",
+    version: "0.0.1",
+    description: "Pure Zig CSS Parser",
+    author: "VExcess <github.com/vexcess>",
+    modules: {
+        demo: {
+            root: "demo/demo.zig",
+            dependencies: [
+                "zcss",
+                "vexlib"
+            ]
+        },
+        zcss: {
+            type: "lib",
+            root: "src/zcss.zig",
+            dependencies: [
+                "vexlib",
+            ]
+        },
+        $importAll: [{
+            local: "../vexlib",
+            remote: "https://github.com/vExcess/zig-vexlib"
+        }]
+    },
+    build: {
+        default: ["demo"]
+    }
+}
